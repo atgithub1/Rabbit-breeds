@@ -1,6 +1,6 @@
 <?php
 
-function checkBreedsAlt($breeds, $rabbits) {
+function checkBreeds($breeds, $rabbits) {
 	
 	if ($breeds == '') return 0; 
 	
