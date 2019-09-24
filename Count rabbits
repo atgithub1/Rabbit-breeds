@@ -1,0 +1,15 @@
+<?php
+
+function checkBreedsAlt($breeds, $rabbits) {
+	
+	if ($breeds == '') return 0; 
+	
+	$breedsArr = str_split($breeds);
+	$rabbitsArr = str_split($rabbits);
+	$result = 0;
+	foreach ($rabbitsArr as $rabbit) {
+		$result += in_array($rabbit, $breedsArr) ? 1 : 0;
+	}
+	return $result;
+}
+
